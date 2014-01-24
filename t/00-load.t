@@ -6,7 +6,7 @@ use Test::More tests => 12630;
 
 BEGIN {
     use_ok('Convert::Color');
-    use_ok('Class::Data::Accessor');
+    use_ok('Class::Accessor::Grouped');
     use_ok('App::ColorNamer');
 }
 

@@ -2,11 +2,11 @@ package App::ColorNamer;
 
 use warnings;
 use strict;
-our $VERSION = '0.0103';
+our $VERSION = '0.0104';
 
 use Convert::Color;
-use base 'Class::Data::Accessor';
-__PACKAGE__->mk_classaccessors(qw(
+use base 'Class::Accessor::Grouped';
+__PACKAGE__->mk_group_accessors( simple => qw(
     known_colors
     sane_colors
     color
